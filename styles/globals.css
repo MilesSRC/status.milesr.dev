@@ -1,16 +1,31 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #1d1d1d;
+  background-color: #1d1d1d;
+  color: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body > div {
+  width: 100%;
+  height: 100%;
 }
 
-* {
-  box-sizing: border-box;
+.server {
+  box-shadow: 0 0 30px rgba(46,204,113,1);
+}
+
+.server.offline {
+  box-shadow: 0 0 30px rgba(204, 46, 46, 1);
+}
+
+.server.troubles {
+  box-shadow: 0 0 30px rgb(204, 141, 46)
 }
